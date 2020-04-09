@@ -34,10 +34,8 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial,sans-serif;
-  background-color:#a9a9a9;
   -moz-osx-font-smoothing: grayscale;
-  text-align: left;
-  
+  text-align: center;
   color: #2c3e50;
 }
 
