@@ -1,17 +1,21 @@
 <template>
-<!DOCTYPE html>
-<html lang="ja">
-<body>
-  <div id="main-name">Kishida Mei</div>
-  <hr style= "border-top:2px solid #FFFF00;">
-  <hr style= "border-top:3px solid #800080;">
-  <hr style= "border-top:1px solid #008000;">
-  <div id="main-seattle">Seattlecomsulting</div>
-  <br/>
-  <img id="profil" src="../assets/wario.jpeg">
-  
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="ja">
+    <body id="main-all">
+      <div id="main-name">
+        Kishida Mei
+      </div>
+      <hr style="border-top: 2px solid #fff;">
+      <div id="main-seattle">
+        Seattlecomsulting
+      </div>
+      <br>
+      <img
+        id="profil"
+        src="../assets/watashi.jpeg"
+      >
+    </body>
+  </html>
 </template>
 
 <script>
@@ -19,22 +23,35 @@
 export default {
   name: 'Main' ,
   components: {
- 
+
   }
 }
 </script>
 
 <style>
-body    {background-color: #ffffff;}
 
-#main-name  {font-family: 'HGP行書体';
-              font-size: 30px;
-              }
+#main-all {
+  background-color: rgb(50, 212, 212);
+  font-weight: bold;
+}
 
-#main-seattle   {font-family: 'HGP行書体';
-                  font-size: 25px;}
+#main-name {
+  font-family: 'Vollkorn', serif;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: #000 0 0 10px;
+}
 
-#profil  {border-radius: 50%;
-       width: 200px;
-       height: 200px;}
+#main-seattle {
+  font-family: 'Vollkorn', serif;
+  font-size: 25px;
+  color: #fff;
+  text-shadow: #000 0 0 10px;
+}
+
+#profil {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
 </style>
