@@ -2,7 +2,6 @@
   <div>
     About
   </div>
-
 </template>
 
 <script>
