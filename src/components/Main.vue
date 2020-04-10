@@ -1,20 +1,18 @@
 <template>
   <!DOCTYPE html>
   <html lang="ja">
-    <body>
+    <body id="main-all">
       <div id="main-name">
         Kishida Mei
       </div>
-      <hr style="border-top: 2px solid #ff0;">
-      <hr style="border-top: 3px solid #800080;">
-      <hr style="border-top: 1px solid #008000;">
+      <hr style="border-top: 2px solid #fff;">
       <div id="main-seattle">
         Seattlecomsulting
       </div>
       <br>
       <img
         id="profil"
-        src="../assets/wario.jpeg"
+        src="../assets/watashi.jpeg"
       >
     </body>
   </html>
@@ -25,22 +23,30 @@
 export default {
   name: 'Main' ,
   components: {
- 
+
   }
 }
 </script>
 
 <style>
-body { background-color: #fff; }
+
+#main-all {
+  background-color: rgb(50, 212, 212);
+  font-weight: bold;
+}
 
 #main-name {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Vollkorn', serif;
   font-size: 30px;
+  color: #fff;
+  text-shadow: #000 0 0 10px;
 }
 
 #main-seattle {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Vollkorn', serif;
   font-size: 25px;
+  color: #fff;
+  text-shadow: #000 0 0 10px;
 }
 
 #profil {

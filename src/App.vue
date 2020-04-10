@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Vollkorn:ital,wght@1,900&display=swap');
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
