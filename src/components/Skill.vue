@@ -2,7 +2,6 @@
   <div>
     Skill
   </div>
-
 </template>
 
 <script>

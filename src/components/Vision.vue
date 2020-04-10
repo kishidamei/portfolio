@@ -2,7 +2,6 @@
   <div>
     Vision
   </div>
-
 </template>
 
 <script>
