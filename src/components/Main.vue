@@ -30,8 +30,10 @@ export default {
 
 <style>
 
+hr { width: 50%; }
+
 #main-all {
-  background-color: rgb(50, 212, 212);
+  background: radial-gradient(#80e1f7 40%, #06c1e6);
   font-weight: bold;
 }
 
@@ -51,7 +53,7 @@ export default {
 
 #profil {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 </style>

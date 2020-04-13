@@ -1,12 +1,12 @@
 <template>
   <!DOCTYPE html>
   <html lang="jp">
-    <body id="about-waku">
-      <h2 id="about-title">
+    <body id="aboutSection">
+      <h2 id="aboutTitle">
         About Me
       </h2>
 
-      <h2 id="about-me">
+      <h2 id="aboutExplain">
         あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
       </h2>
     </body>
@@ -24,19 +24,19 @@ export default {
 </script>
 
 <style>
-#about-waku { background-color: rgb(247, 242, 242); }
+#aboutSection { background-color: #f5f5f5; }
 
-#about-title {
-  color: rgb(104, 196, 196);
+#aboutTitle {
+  color: #20879f;
   text-shadow: #fff 0 0 10px;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
 }
 
-#about-me {
+#aboutExplain {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-weight: lighter;
-  color: rgb(138, 134, 134);
+  color: #707070;
   font-size: 15px;
 }
 

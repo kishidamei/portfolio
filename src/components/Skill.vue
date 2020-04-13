@@ -1,14 +1,14 @@
 <template>
   <!DOCTYPE html>
   <html lang="jp">
-    <body id="skill-waku">
-      <h2 id="skill-title">
+    <body id="skillSection">
+      <h2 id="skillTitle">
         Skill Set
       </h2>
-      <h2 id="skill-me">
+      <h2 id="skillExplain">
         あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
       </h2>
-      <h2 id="skill-link">
+      <h2 id="GitHubLabel">
         Git hub:<a
           href="https://github.com/kishidamei/portfolio"
           target="_blank"
@@ -30,24 +30,24 @@ export default {
 </script>
 
 <style>
-#skill-waku { background-color: #fff; }
+#skillSection { background-color: #fff; }
 
-#skill-title {
-  color: rgb(138, 134, 134);
+#skillTitle {
+  color: #20879f;
   text-shadow: #fff 0 0 10px;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
   font-size: 25px;
 }
 
-#skill-me {
+#skillExplain {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-weight: lighter;
   color: rgb(138, 134, 134);
   font-size: 15px;
 }
 
-#skill-link {
+#GitHubLabel {
   font-size: 15px;
   color: paleturquoise;
   font-family: 'M PLUS Rounded 1c', sans-serif;

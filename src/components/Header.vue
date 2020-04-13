@@ -1,5 +1,5 @@
 <template>
-  <div id="nav-drawer">
+  <div id="headerSection">
     <input
       id="nav-input"
       type="checkbox"
@@ -25,7 +25,7 @@
 export default {
   name: 'Header' ,
   components: {
-    
+
   },
   data(){
     return{
@@ -44,10 +44,9 @@ export default {
 <style>
 header {
   padding: 10px;
-  background: skyblue;
 }
 
-#nav-drawer {
+#headerSection {
   position: relactive;
   text-align: left;
 }
