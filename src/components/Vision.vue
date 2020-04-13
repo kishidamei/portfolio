@@ -1,12 +1,12 @@
 <template>
   <!DOCTYPE html>
   <html lang="jp">
-    <body id="vision-waku">
-      <h2 id="vision-title">
-        About Me
+    <body id="visionSection">
+      <h2 id="visionTitle">
+        Vision
       </h2>
 
-      <h2 id="vision-me">
+      <h2 id="visionExplain">
         あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
       </h2>
     </body>
@@ -24,16 +24,16 @@ export default {
 </script>
 
 <style>
-#vision-waku { background-color: #fff; }
+#visionSection { background-color: #fff; }
 
-#vision-title {
+#visionTitle {
   color: rgb(104, 196, 196);
   text-shadow: #fff 0 0 10px;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
 }
 
-#vision-me {
+#visionExplain {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-weight: lighter;
   color: rgb(138, 134, 134);
