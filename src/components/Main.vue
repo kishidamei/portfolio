@@ -1,7 +1,7 @@
 <template>
   <!DOCTYPE html>
   <html lang="ja">
-    <body id="main-all">
+    <body id="mainSection">
       <div id="main-name">
         Kishida Mei
       </div>
@@ -32,7 +32,7 @@ export default {
 
 hr { width: 50%; }
 
-#main-all {
+#mainSection {
   background: radial-gradient(#80e1f7 40%, #06c1e6);
   font-weight: bold;
 }

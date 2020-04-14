@@ -9,28 +9,33 @@
         crossorigin="anonymous"
       >
     </head>
-    <footer>
-      <div id="footerSection">
-        <a
-          href="#"
-          @click="clickSmoothScroll()"
-        >
-          <i class="fas fa-chevron-circle-up footerScroll" /></a>
-        <div id="footerCopyright">
-          &copy;Seattleconsulting
-        </div>
+
+    <div id="footerSection">
+      <a
+        href="#"
+        @click="clickSmoothScroll()"
+      >
+        <i class="fas fa-chevron-circle-up fa-2x footerScroll" /></a>
+      <div id="footerCopyright">
+        &copy;Seattleconsulting
       </div>
-    </footer>
+    </div>
   </html>
 </template>
 
 <script>
-
-
 export default {
-  name: 'Footer' ,
-  components: {
-
+  methods: {
+    clickSmoothScroll () {
+      event.preventDefault()
+      this.$SmoothScroll(
+        document.querySelector('#headerSection'),
+        400,
+        null,
+        null,
+        'y'
+      )
+    }
   }
 }
 </script>
@@ -48,5 +53,11 @@ export default {
   font-size: 12px;
 }
 
-.footerScroll { color: #fff; }
+.footerScroll {
+  color: #fff;
+  position: relative;
+  top: -10px;
+  background-color: #80e1f7;
+  border-radius: 50%;
+}
 </style>
