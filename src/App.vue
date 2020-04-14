@@ -17,6 +17,8 @@ import Skill from './components/Skill.vue'
 import Vision from './components/Vision.vue'
 import Footer from './components/Footer.vue'
 
+
+
 export default {
   name: 'App' ,
   components: {

@@ -14,17 +14,18 @@
       class="nav-unshown"
       for="nav-input"
     />
-    <div id="nav-content" />
+    <div id="nav-content">
+      <Menu />
+    </div>
   </div>
 </template>
 
 <script>
-
-
+import Menu from '../components/Menu.vue'
 
 export default {
   name: 'Header' ,
-  components: {
+  components: {Menu
 
   },
   data(){
