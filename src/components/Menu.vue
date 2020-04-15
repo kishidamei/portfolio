@@ -9,37 +9,46 @@
         crossorigin="anonymous"
       >
     </head>
-    <div id="drawerButton">
-      aaaaaa
+    <div id="drawerSection">
+      <label for="nav-input">
+        <i class="far fa-times-circle fa-3x drawerButton" />
+      </label>
+
+      <ul id="drawerMenuSection">
+        <li class="drawerMenuItem">
+          <a
+            id="drawerMenuItemLink"
+            href="#Main"
+            @click="clickSmoothScroll()"
+          >Home </a>
+        </li>
+        <li class="drawerMenuItem">
+          <a
+            id="drawerMenuItemLink"
+            href="#About"
+            @click="clickSmoothScroll()"
+          >About me  </a>
+        </li>
+        <li class="drawerMenuItem">
+          <a
+            id="drawerMenuItemLink"
+            href="#Skill"
+            @click="clickSmoothScroll()"
+          >Skill Set</a>
+        </li>
+        <li class="drawerMenuItem">
+          <a
+            id="drawerMenuItemLink"
+            href="#Vision"
+            @click="clickSmoothScroll()"
+          > Vision </a>
+        </li>
+      </ul>
+      <a
+        class="drawerMenuItemLink"
+        href=""
+      />
     </div>
-    <ul id="drawerMenuSection">
-      <li>
-        <a
-          href="#mainSection"
-          @click="clickSmoothScroll()"
-        >Home  </a>
-      </li>
-      <li>
-        <a
-          href="#aboutSection"
-          @click="clickSmoothScroll()"
-        >About me  </a>
-      </li>
-      <li>
-        <a
-          href="#skillSection"
-          @click="clickSmoothScroll()"
-        >Skill Set</a>
-      </li>
-      <li>
-        <a
-          href="#visionSection"
-          @click="clickSmoothScroll()"
-        > Vision </a>
-      </li>
-      <li>Customize Item1</li>
-      <li>Customize Item2</li>
-    </ul>
   </html>
 </template>
 
@@ -49,7 +58,7 @@ export default {
     clickSmoothScroll () {
       event.preventDefault()
       this.$SmoothScroll(
-        document.querySelector('#mainSection','#visionSection','#skillSection','visionSection'),
+        document.querySelector('#app'),
         400,
         null,
         null,
@@ -62,6 +71,39 @@ export default {
 </script>
 
 <style>
-#drawerMenuSection { color: #000; }
+#drawerSection {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: auto;
+}
+
+.drawerButton {
+  color: #707070;
+  position: relative;
+  top: 10px;
+  left: 260px;
+}
+
+#drawerMenuSection {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  color: #707070;
+}
+
+.drawerMenuItem {
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  border: 1px solid #707070;
+  border-left: none;
+}
+
+#drawerMenuItemLink {
+  color: #707070;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+}
 
 </style>

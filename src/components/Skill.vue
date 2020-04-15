@@ -8,24 +8,109 @@
       <h2 id="skillExplain">
         あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
       </h2>
-      <h2 id="GitHubLabel">
+      <label id="GitHubLabel">
         Git hub:<a
           href="https://github.com/kishidamei/portfolio"
           target="_blank"
         >
           https://github.com/kishidamei/portfolio</a>
-      </h2>
+      </label>
+      <div id="skillCategories">
+        <ul>
+          <li class="skillCategoriesList">
+            <span
+              id="front"
+              @click="setCurrentChart('front')"
+            >Front-end</span>
+          </li>
+          <li class="skillCategoriesList">
+            <span
+              id="back"
+              @click="setCurrentChart('back')"
+            >Back-end</span>
+          </li>
+          <li class="skillCategoriesList">
+            <span
+              id="dev"
+              @click="setCurrentChart('devOp')"
+            >DevOps</span>
+          </li>
+        </ul>
+      </div>
+      <div id="skillList">
+        <ul
+          id="front-end"
+          :class="{'front-change':isFrontActive}"
+        >
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>jQuery</li>
+          <li>SCSS</li>
+          <li>Vue</li>
+        </ul>
+        <ul
+          id="back-end"
+          :class="{'back-change':isBackActive}"
+        >
+          <li>Java</li>
+          <li>Ruby</li>
+          <li>RubyOnRails</li>
+          <li>MySQL</li>
+          <li>Python</li>
+        </ul>
+        <ul
+          id="devops"
+          :class="{'dev-change':isDevOpsActive}"
+        >
+          <li>Linux</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Firebase</li>
+          <li>AWS</li>
+        </ul>
+      </div>
+      <div v-if="currentChange=='front'">
+        <FrontChart />
+      </div>
+      <div v-if="currentChange=='back'">
+        <BackChart />
+      </div>
+      <div v-if="currentChange=='devOps'">
+        <DevChart />
+      </div>
     </body>
   </html>
 </template>
 
 <script>
+import FrontChart from '../components/FrontChart.vue'
+import BackChart from '../components/BackChart.vue'
+import DevChart from '../components/DevChart.vue'
 
 export default {
   name: 'Skill' ,
-  components: {
+  components: {FrontChart,BackChart,DevChart
 
+  },
+  data(){
+    return {currentChart: 'front',
+    }
+  },
+ computed: {
+    isFrontActive() {
+      return this.currentChart=='front';
+    },
+    isBackActive() {
+      return this.currentChart=='back';},
+    isDevOpsActive(){
+      return this.currentChart=='devOps';
+    }},
+methods: {
+  setCurrentChart(chart){
+    this.currentChart = chart;
   }
+ }
 }
 </script>
 
@@ -52,4 +137,71 @@ export default {
   color: paleturquoise;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+
+#skillCategories { padding: 20px 0; }
+
+.skillCategoriesList {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#front {
+  color: #b51a1a;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#back {
+  color: #0f8839;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#dev {
+  color: #571083;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#skillList {
+  width: auto;
+  font-size: 18px;
+  border-bottom: 2px solid #f3f3f3;
+  padding: 10px 0 50px 0;
+}
+
+li {
+  display: inline-block;
+  margin: 10px 10px;
+}
+
+#front-end li {
+  color: rgba(181, 26, 26, 0.75);
+  height: 30px;
+  font-weight: bold;
+  padding: 12px 20px 2px 20px;
+  box-shadow: 0 0 8px gray;
+}
+
+#back-end li {
+  color: rgba(15, 136, 57, 0.75);
+  height: 30px;
+  font-weight: bold;
+  padding: 12px 20px 2px 20px;
+  box-shadow: 0 0 8px gray;
+}
+
+#devops li {
+  color: rgba(87, 16, 131, 0.75);
+  height: 30px;
+  font-weight: bold;
+  padding: 12px 20px 2px 20px;
+  box-shadow: 0 0 8px gray;
+}
+
+#front-change li { background-color: rgba(181, 26, 26, 0.4); }
+
+#back-change li { background-color: rgba(15, 136, 57, 0.4); }
+
+#dev-change li { background-color: rgba(87, 16, 131, 0.4); }
 </style>

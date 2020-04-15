@@ -45,11 +45,13 @@ export default {
 <style>
 header {
   padding: 10px;
+  background-color: #f3f3f3;
 }
 
 #headerSection {
   position: relactive;
   text-align: left;
+  background-color: #f3f3f3;
 }
 
 /* チェックボックス等は非表示に */
@@ -132,9 +134,10 @@ header {
 
   /* 滑らかに表示 */
   -webkit-transform: translateX(-105%);
-  transform: translateX(-105%);
+
 
   /* 左に隠しておく */
+  transform: translateX(-105%);
 }
 
 /* チェックが入ったらもろもろ表示 */
