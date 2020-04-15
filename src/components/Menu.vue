@@ -1,14 +1,5 @@
 <template>
-  <!DOCTYPE html>
-  <html lang="ja">
-    <head>
-      <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-        crossorigin="anonymous"
-      >
-    </head>
+  <html>
     <div id="drawerSection">
       <label for="nav-input">
         <i class="far fa-times-circle fa-3x drawerButton" />

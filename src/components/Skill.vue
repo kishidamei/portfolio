@@ -1,86 +1,83 @@
 <template>
-  <!DOCTYPE html>
-  <html lang="jp">
-    <body id="skillSection">
-      <h2 id="skillTitle">
-        Skill Set
-      </h2>
-      <h2 id="skillExplain">
-        あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-      </h2>
-      <label id="GitHubLabel">
-        Git hub:<a
-          href="https://github.com/kishidamei/portfolio"
-          target="_blank"
-        >
-          https://github.com/kishidamei/portfolio</a>
-      </label>
-      <div id="skillCategories">
-        <ul>
-          <li class="skillCategoriesList">
-            <span
-              id="front"
-              @click="setCurrentChart('front')"
-            >Front-end</span>
-          </li>
-          <li class="skillCategoriesList">
-            <span
-              id="back"
-              @click="setCurrentChart('back')"
-            >Back-end</span>
-          </li>
-          <li class="skillCategoriesList">
-            <span
-              id="dev"
-              @click="setCurrentChart('devOp')"
-            >DevOps</span>
-          </li>
-        </ul>
-      </div>
-      <div id="skillList">
-        <ul
-          id="front-end"
-          :class="{'front-change':isFrontActive}"
-        >
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>jQuery</li>
-          <li>SCSS</li>
-          <li>Vue</li>
-        </ul>
-        <ul
-          id="back-end"
-          :class="{'back-change':isBackActive}"
-        >
-          <li>Java</li>
-          <li>Ruby</li>
-          <li>RubyOnRails</li>
-          <li>MySQL</li>
-          <li>Python</li>
-        </ul>
-        <ul
-          id="devops"
-          :class="{'dev-change':isDevOpsActive}"
-        >
-          <li>Linux</li>
-          <li>Git</li>
-          <li>GitHub</li>
-          <li>Firebase</li>
-          <li>AWS</li>
-        </ul>
-      </div>
-      <div v-if="currentChange=='front'">
-        <FrontChart />
-      </div>
-      <div v-if="currentChange=='back'">
-        <BackChart />
-      </div>
-      <div v-if="currentChange=='devOps'">
-        <DevChart />
-      </div>
-    </body>
-  </html>
+  <body id="skillSection">
+    <h2 id="skillTitle">
+      Skill Set
+    </h2>
+    <h2 id="skillExplain">
+      あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+    </h2>
+    <label id="GitHubLabel">
+      Git hub:<a
+        href="https://github.com/kishidamei/portfolio"
+        target="_blank"
+      >
+        https://github.com/kishidamei/portfolio</a>
+    </label>
+    <div id="skillCategories">
+      <ul>
+        <li class="skillCategoriesList">
+          <span
+            id="front"
+            @click="setCurrentChart('front')"
+          >Front-end</span>
+        </li>
+        <li class="skillCategoriesList">
+          <span
+            id="back"
+            @click="setCurrentChart('back')"
+          >Back-end</span>
+        </li>
+        <li class="skillCategoriesList">
+          <span
+            id="dev"
+            @click="setCurrentChart('devOp')"
+          >DevOps</span>
+        </li>
+      </ul>
+    </div>
+    <div id="skillList">
+      <ul
+        id="front-end"
+        :class="{'front-change':isFrontActive}"
+      >
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>jQuery</li>
+        <li>SCSS</li>
+        <li>Vue</li>
+      </ul>
+      <ul
+        id="back-end"
+        :class="{'back-change':isBackActive}"
+      >
+        <li>Java</li>
+        <li>Ruby</li>
+        <li>RubyOnRails</li>
+        <li>MySQL</li>
+        <li>Python</li>
+      </ul>
+      <ul
+        id="devops"
+        :class="{'dev-change':isDevOpsActive}"
+      >
+        <li>Linux</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Firebase</li>
+        <li>AWS</li>
+      </ul>
+    </div>
+    <div v-if="currentChange=='front'">
+      <FrontChart />
+    </div>
+    <div v-if="currentChange=='back'">
+      <BackChart />
+    </div>
+    <div v-if="currentChange=='devOps'">
+      <DevChart />
+    </div>
+  </body>
 </template>
 
 <script>

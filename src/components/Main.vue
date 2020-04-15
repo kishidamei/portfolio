@@ -1,21 +1,18 @@
 <template>
-  <!DOCTYPE html>
-  <html lang="ja">
-    <body id="mainSection">
-      <div id="main-name">
-        Kishida Mei
-      </div>
-      <hr style="border-top: 2px solid #fff;">
-      <div id="main-seattle">
-        Seattlecomsulting
-      </div>
-      <br>
-      <img
-        id="profil"
-        src="../assets/watashi.jpeg"
-      >
-    </body>
-  </html>
+  <body id="mainSection">
+    <div id="main-name">
+      Kishida Mei
+    </div>
+    <hr style="border-top: 2px solid #fff;">
+    <div id="main-seattle">
+      Seattlecomsulting
+    </div>
+    <br>
+    <img
+      id="profil"
+      src="../assets/watashi.jpeg"
+    >
+  </body>
 </template>
 
 <script>

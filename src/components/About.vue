@@ -1,16 +1,13 @@
 <template>
-  <!DOCTYPE html>
-  <html lang="jp">
-    <body id="aboutSection">
-      <h2 id="aboutTitle">
-        About Me
-      </h2>
+  <body id="aboutSection">
+    <h2 id="aboutTitle">
+      About Me
+    </h2>
 
-      <h2 id="aboutExplain">
-        あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-      </h2>
-    </body>
-  </html>
+    <h2 id="aboutExplain">
+      あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+    </h2>
+  </body>
 </template>
 
 <script>
