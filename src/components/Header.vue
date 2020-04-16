@@ -15,7 +15,7 @@
       for="nav-input"
     />
     <div id="nav-content">
-      <Menu @Menu-close="toggle" />
+      <Menu />
     </div>
   </div>
 </template>

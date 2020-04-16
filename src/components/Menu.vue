@@ -44,6 +44,8 @@
 </template>
 
 <script>
+
+
 export default {
   methods: {
     clickSmoothScroll () {
@@ -55,7 +57,7 @@ export default {
         null,
         'y'
       )
-      this.$emit('Menu-close')
+     document.querySelector('#nav-input').checked = false;
     }
   },
 
