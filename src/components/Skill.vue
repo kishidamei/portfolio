@@ -4,7 +4,9 @@
       Skill Set
     </h2>
     <h2 id="skillExplain">
-      あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+      修練のすえ身につけたスキルをまとめました。
+      苦手がなければ得意もない状態です。
+      幅広くスキルアップしたいと考えています。
     </h2>
     <label id="GitHubLabel">
       Git hub:<a
@@ -30,7 +32,7 @@
         <li class="skillCategoriesList">
           <span
             id="dev"
-            @click="setCurrentChart('devOp')"
+            @click="setCurrentChart('devOps')"
           >DevOps</span>
         </li>
       </ul>
@@ -68,13 +70,13 @@
         <li>AWS</li>
       </ul>
     </div>
-    <div v-if="currentChange=='front'">
+    <div v-if="isFrontActive">
       <FrontChart />
     </div>
-    <div v-if="currentChange=='back'">
+    <div v-if="isBackActive">
       <BackChart />
     </div>
-    <div v-if="currentChange=='devOps'">
+    <div v-if="isDevOpsActive">
       <DevChart />
     </div>
   </body>
@@ -91,7 +93,7 @@ export default {
 
   },
   data(){
-    return {currentChart: 'front',
+    return {currentChart: 'front'
     }
   },
  computed: {
@@ -101,8 +103,8 @@ export default {
     isBackActive() {
       return this.currentChart=='back';},
     isDevOpsActive(){
-      return this.currentChart=='devOps';
-    }},
+      return this.currentChart=='devOps';}
+      },
 methods: {
   setCurrentChart(chart){
     this.currentChart = chart;
@@ -112,7 +114,12 @@ methods: {
 </script>
 
 <style>
-#skillSection { background-color: #fff; }
+#skillSection {
+  background-color: #fff;
+  padding: 5px;
+  width: 100%;
+  height: auto;
+}
 
 #skillTitle {
   color: #20879f;
@@ -123,17 +130,20 @@ methods: {
 }
 
 #skillExplain {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: lighter;
   color: rgb(138, 134, 134);
   font-size: 15px;
+  word-break: keep-all;
+  line-height: 2.25em;
 }
 
 #GitHubLabel {
   font-size: 15px;
-  color: paleturquoise;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #20879f;
+  font-family: 'Noto Sans JP', sans-serif;
 }
+a { color: #20879f; }
 
 #skillCategories { padding: 20px 0; }
 
@@ -172,6 +182,12 @@ li {
   margin: 10px 10px;
 }
 
+.front-change li { background-color: rgba(181, 26, 26, 0.4); }
+
+.back-change li { background-color: rgba(15, 136, 57, 0.4); }
+
+.dev-change li { background-color: rgba(87, 16, 131, 0.4); }
+
 #front-end li {
   color: rgba(181, 26, 26, 0.75);
   height: 30px;
@@ -196,9 +212,4 @@ li {
   box-shadow: 0 0 8px gray;
 }
 
-#front-change li { background-color: rgba(181, 26, 26, 0.4); }
-
-#back-change li { background-color: rgba(15, 136, 57, 0.4); }
-
-#dev-change li { background-color: rgba(87, 16, 131, 0.4); }
 </style>

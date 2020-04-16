@@ -32,25 +32,27 @@ hr { width: 50%; }
 #mainSection {
   background: radial-gradient(#80e1f7 40%, #06c1e6);
   font-weight: bold;
+  width: 100%;
+  height: auto;
 }
 
 #main-name {
-  font-family: 'Vollkorn', serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 30px;
   color: #fff;
-  text-shadow: #000 0 0 10px;
+  text-shadow: gray 0 0 10px;
 }
 
 #main-seattle {
-  font-family: 'Vollkorn', serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 25px;
   color: #fff;
-  text-shadow: #000 0 0 10px;
+  text-shadow: gray 0 0 10px;
 }
 
 #profil {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 25%;
+  height: 25%;
 }
 </style>

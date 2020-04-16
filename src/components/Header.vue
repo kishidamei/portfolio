@@ -15,7 +15,7 @@
       for="nav-input"
     />
     <div id="nav-content">
-      <Menu />
+      <Menu @Menu-close="toggle" />
     </div>
   </div>
 </template>
@@ -36,6 +36,7 @@ export default {
   methods: {
     toggle(){
       this.open = !this.open
+
     }
   }
 };
@@ -43,15 +44,13 @@ export default {
 
 
 <style>
-header {
-  padding: 10px;
-  background-color: #f3f3f3;
-}
-
 #headerSection {
   position: relactive;
   text-align: left;
   background-color: #f3f3f3;
+  width: 100%;
+  height: auto;
+  padding: 5px;
 }
 
 /* チェックボックス等は非表示に */

@@ -5,7 +5,8 @@
     </h2>
 
     <h2 id="visionExplain">
-      あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+      さまざまな開発に携わりたいと考えています。<br>
+      コミュニケーションを大切に人を思いやる仕事をしていきたいです。
     </h2>
   </body>
 </template>
@@ -31,10 +32,12 @@ export default {
 }
 
 #visionExplain {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: lighter;
   color: rgb(138, 134, 134);
   font-size: 15px;
+  word-break: keep-all;
+  line-height: 2.25em;
 }
 
 </style>
