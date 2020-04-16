@@ -1,16 +1,13 @@
 <template>
-  <!DOCTYPE html>
-  <html lang="jp">
-    <body id="visionSection">
-      <h2 id="visionTitle">
-        Vision
-      </h2>
+  <body id="visionSection">
+    <h2 id="visionTitle">
+      Vision
+    </h2>
 
-      <h2 id="visionExplain">
-        あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-      </h2>
-    </body>
-  </html>
+    <h2 id="visionExplain">
+      あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+    </h2>
+  </body>
 </template>
 
 <script>

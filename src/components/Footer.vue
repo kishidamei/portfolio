@@ -1,6 +1,5 @@
 <template>
-  <!DOCTYPE html>
-  <html lang="ja">
+  <html>
     <head>
       <link
         rel="stylesheet"
@@ -9,7 +8,6 @@
         crossorigin="anonymous"
       >
     </head>
-
     <div id="footerSection">
       <a
         href="#"
