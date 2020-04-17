@@ -1,16 +1,14 @@
 <template>
-  <!DOCTYPE html>
-  <html lang="jp">
-    <body id="vision-waku">
-      <h2 id="vision-title">
-        About Me
-      </h2>
+  <body id="visionSection">
+    <h2 id="visionTitle">
+      Vision
+    </h2>
 
-      <h2 id="vision-me">
-        あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-      </h2>
-    </body>
-  </html>
+    <h2 id="visionExplain">
+      さまざまな開発に携わりたいと考えています。<br>
+      コミュニケーションを大切に人を思いやる仕事をしていきたいです。
+    </h2>
+  </body>
 </template>
 
 <script>
@@ -24,20 +22,22 @@ export default {
 </script>
 
 <style>
-#vision-waku { background-color: #fff; }
+#visionSection { background-color: #fff; }
 
-#vision-title {
+#visionTitle {
   color: rgb(104, 196, 196);
   text-shadow: #fff 0 0 10px;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
 }
 
-#vision-me {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+#visionExplain {
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: lighter;
   color: rgb(138, 134, 134);
   font-size: 15px;
+  word-break: keep-all;
+  line-height: 2.25em;
 }
 
 </style>

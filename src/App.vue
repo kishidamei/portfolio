@@ -17,6 +17,8 @@ import Skill from './components/Skill.vue'
 import Vision from './components/Vision.vue'
 import Footer from './components/Footer.vue'
 
+
+
 export default {
   name: 'App' ,
   components: {
@@ -30,11 +32,12 @@ export default {
 }
 </script>
 
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Vollkorn:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Noto+Sans:ital,wght@1,700&family=Vollkorn:ital,wght@1,900&display=swap');
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif, "FontAwesome";
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;

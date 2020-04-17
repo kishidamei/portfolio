@@ -1,5 +1,5 @@
 <template>
-  <div id="nav-drawer">
+  <div id="headerSection">
     <input
       id="nav-input"
       type="checkbox"
@@ -14,18 +14,19 @@
       class="nav-unshown"
       for="nav-input"
     />
-    <div id="nav-content" />
+    <div id="nav-content">
+      <Menu />
+    </div>
   </div>
 </template>
 
 <script>
-
-
+import Menu from '../components/Menu.vue'
 
 export default {
   name: 'Header' ,
-  components: {
-    
+  components: {Menu
+
   },
   data(){
     return{
@@ -35,6 +36,7 @@ export default {
   methods: {
     toggle(){
       this.open = !this.open
+
     }
   }
 };
@@ -42,14 +44,13 @@ export default {
 
 
 <style>
-header {
-  padding: 10px;
-  background: skyblue;
-}
-
-#nav-drawer {
+#headerSection {
   position: relactive;
   text-align: left;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: auto;
+  padding: 5px;
 }
 
 /* チェックボックス等は非表示に */
@@ -132,9 +133,10 @@ header {
 
   /* 滑らかに表示 */
   -webkit-transform: translateX(-105%);
-  transform: translateX(-105%);
+
 
   /* 左に隠しておく */
+  transform: translateX(-105%);
 }
 
 /* チェックが入ったらもろもろ表示 */
