@@ -37,6 +37,7 @@ export default {
   text-shadow: #fff 0 0 10px;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
+  font-size: 25px;
 }
 
 #aboutExplain {
