@@ -9,28 +9,28 @@
         <li class="drawerMenuItem">
           <a
             id="drawerMenuItemLink"
-            href="#Main"
+            href="#meinSection"
             @click="clickSmoothScroll()"
           >Home </a>
         </li>
         <li class="drawerMenuItem">
           <a
             id="drawerMenuItemLink"
-            href="#About"
+            href="#aboutSection"
             @click="clickSmoothScroll()"
           >About me  </a>
         </li>
         <li class="drawerMenuItem">
           <a
             id="drawerMenuItemLink"
-            href="#Skill"
+            href="#skillSection"
             @click="clickSmoothScroll()"
           >Skill Set</a>
         </li>
         <li class="drawerMenuItem">
           <a
             id="drawerMenuItemLink"
-            href="#Vision"
+            href="#visionSection"
             @click="clickSmoothScroll()"
           > Vision </a>
         </li>
@@ -44,6 +44,8 @@
 </template>
 
 <script>
+
+
 export default {
   methods: {
     clickSmoothScroll () {
@@ -55,6 +57,7 @@ export default {
         null,
         'y'
       )
+     document.querySelector('#nav-input').checked = false;
     }
   },
 
