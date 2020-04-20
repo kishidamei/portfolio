@@ -5,7 +5,7 @@
     </div>
     <hr style="border-top: 2px solid #fff;">
     <div id="main-seattle">
-      Seattlecomsulting
+      Seattleconsulting
     </div>
     <br>
     <img
@@ -27,13 +27,13 @@ export default {
 
 <style>
 
-hr { width: 50%; }
 
 #mainSection {
   background: radial-gradient(#80e1f7 40%, #06c1e6);
   font-weight: bold;
   width: 100%;
   height: auto;
+  margin-top: 10px;
 }
 
 #main-name {

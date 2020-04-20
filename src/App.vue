@@ -1,5 +1,8 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+    class="wrap"
+  >
     <Header />
     <Main />
     <About />
@@ -16,7 +19,6 @@ import About from './components/About.vue'
 import Skill from './components/Skill.vue'
 import Vision from './components/Vision.vue'
 import Footer from './components/Footer.vue'
-
 
 
 export default {

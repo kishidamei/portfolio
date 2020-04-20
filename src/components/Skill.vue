@@ -70,13 +70,22 @@
         <li>AWS</li>
       </ul>
     </div>
-    <div v-if="isFrontActive">
+    <div
+      v-if="isFrontActive"
+      id="skillGraph"
+    >
       <FrontChart />
     </div>
-    <div v-if="isBackActive">
+    <div
+      v-if="isBackActive"
+      id="skillGraph"
+    >
       <BackChart />
     </div>
-    <div v-if="isDevOpsActive">
+    <div
+      v-if="isDevOpsActive"
+      id="skillGraph"
+    >
       <DevChart />
     </div>
   </body>
@@ -211,5 +220,7 @@ li {
   padding: 12px 20px 2px 20px;
   box-shadow: 0 0 8px gray;
 }
+
+#skillGraph { size: 10px; }
 
 </style>
