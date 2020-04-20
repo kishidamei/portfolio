@@ -1,14 +1,13 @@
 import Vue from 'vue'
-import App from './App.vue'
 import './assets/css/reset.css'
-
+import Vuex from 'vuex'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import smoothScroll from 'vue-smoothscroll'
+
 Vue.use(smoothScroll)
-
-
+Vue.use(VueAxios, axios)
+Vue.use(Vuex)
 Vue.config.productionTip = false
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
 

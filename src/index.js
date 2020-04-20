@@ -22,11 +22,7 @@ app.get('/', (req, res) => {
     });
     // 取得結果を返す
     return res.send(skills);
-  })
-    .catch(error => {
-      // 取得時にエラーがでた場合にエラー文字列を返す
-      res.status(404).send('No data available.');
-    });
+  });
 });
 // regionを指定してファンクションを定義(CORS対策)
 exports.skills = functions.region('us-central1').https.onRequest(app);

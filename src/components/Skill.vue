@@ -72,19 +72,19 @@
     </div>
     <div
       v-if="isFrontActive"
-      id="skillGraph"
+      class="skillGraph"
     >
       <FrontChart />
     </div>
     <div
       v-if="isBackActive"
-      id="skillGraph"
+      class="skillGraph"
     >
       <BackChart />
     </div>
     <div
       v-if="isDevOpsActive"
-      id="skillGraph"
+      class="skillGraph"
     >
       <DevChart />
     </div>
@@ -221,6 +221,6 @@ li {
   box-shadow: 0 0 8px gray;
 }
 
-#skillGraph { size: 10px; }
+.skillGraph { size: 10px; }
 
 </style>
