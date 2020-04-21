@@ -1,0 +1,45 @@
+[debug] [2020-04-20T07:08:57.015Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T07:08:57.018Z] Command:       /Users/meikishida/.nodebrew/node/v8.13.0/bin/node /Users/meikishida/.nodebrew/current/bin/firebase emulators:start --only functions
+[debug] [2020-04-20T07:08:57.019Z] CLI Version:   8.0.1
+[debug] [2020-04-20T07:08:57.019Z] Platform:      darwin
+[debug] [2020-04-20T07:08:57.019Z] Node Version:  v8.13.0
+[debug] [2020-04-20T07:08:57.019Z] Time:          Mon Apr 20 2020 16:08:57 GMT+0900 (JST)
+[debug] [2020-04-20T07:08:57.020Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T07:08:57.020Z] 
+[debug] [2020-04-20T07:08:57.031Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-20T07:08:57.031Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[debug] [2020-04-20T07:08:57.084Z] [hub] writing locator at /var/folders/wl/f8twrbl12t5c63301dhdgcd80000gn/T/hub-meikishida-a4ca3.json
+[info] ✔  hub: emulator hub started at http://localhost:4400
+[info] ✔  functions: Using node@8 from host.
+[info] ✔  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/meikishida/seattle-academy20/portfolio/functions" for Cloud Functions...
+[debug] [2020-04-20T07:08:57.388Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-20T07:08:57.389Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-20T07:08:57.389Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-20T07:08:57.389Z] [worker-~diagnostic~-49d23741-1697-4e0c-9bf9-f93de8527e5e]: Assigning socketPath: /var/folders/wl/f8twrbl12t5c63301dhdgcd80000gn/T/fire_emu_4864.sock 
+[debug] [2020-04-20T07:08:57.390Z] [worker-~diagnostic~-49d23741-1697-4e0c-9bf9-f93de8527e5e]: BUSY 
+[debug] [2020-04-20T07:08:57.768Z] [runtime-status] [4864] Functions runtime initialized. {"cwd":"/Users/meikishida/seattle-academy20/portfolio/functions","node_version":"8.13.0"} 
+[debug] [2020-04-20T07:08:57.769Z] [runtime-status] [4864] Disabled runtime features: undefined 
+[debug] [2020-04-20T07:08:57.771Z] [runtime-status] [4864] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/meikishida/seattle-academy20/portfolio/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-20T07:08:57.773Z] [runtime-status] [4864] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/meikishida/seattle-academy20/portfolio/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-20T07:08:57.778Z] [runtime-status] [4864] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-20T07:08:57.845Z] [runtime-status] [4864] Checked functions.config() {"config":{}} 
+[debug] [2020-04-20T07:08:57.850Z] [runtime-status] [4864] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/meikishida/seattle-academy20/portfolio/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-20T07:08:57.850Z] [runtime-status] [4864] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/meikishida/seattle-academy20/portfolio/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-20T07:08:57.850Z] [runtime-status] [4864] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/meikishida/seattle-academy20/portfolio/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-20T07:08:57.850Z] [runtime-status] [4864] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/meikishida/seattle-academy20/portfolio/functions/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  ReferenceError: Vuex is not defined
+    at Object.<anonymous> (/Users/meikishida/seattle-academy20/portfolio/functions/index.js:6:15)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at /Users/meikishida/.nodebrew/node/v8.13.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:656:33
+    at Generator.next (<anonymous>)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-04-20T07:08:58.132Z] [worker-~diagnostic~-49d23741-1697-4e0c-9bf9-f93de8527e5e]: exited 
+[debug] [2020-04-20T07:08:58.132Z] [worker-~diagnostic~-49d23741-1697-4e0c-9bf9-f93de8527e5e]: FINISHED 
