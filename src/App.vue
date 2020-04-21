@@ -1,7 +1,6 @@
 <template>
   <div
     id="app"
-    class="wrap"
   >
     <Header />
     <Main />
@@ -30,6 +29,38 @@ export default {
     Skill,
     Vision,
     Footer
+  },
+  data: function() {
+    return {
+      skills: [],
+      category: 'front-end',
+    };
+  },
+  computed: {
+    //main.jsでローカルにstoreを登録してるので、$storeが使える
+    //ここではgettersに登録したmessageゲッターを使ってstoreのstateのmessageを取得している
+    skillCategories(){
+     return this.$store.getters.skillCategories
+   },
+  },
+  methods: {
+    getSkills() {
+      // dataのスキルを初期化する
+      this.skills = [];
+      // this.skillsを一時変数のitemsに参照コピーする
+      let items = this.skills;
+      // axios.getを用いてデプロイ済のfunctionにアクセスする
+      this.axios.get('https://us-central1-meikishida-a4ca3.cloudfunctions.net/skills')
+        .then((response) => {
+          response.data.forEach(function(skill) {
+            // 取得したデータを１件ずつ配列に設定する
+            items.push(skill);
+          })
+        })
+        .catch((e) => {
+          alert(e);
+        });
+    }
   }
 }
 </script>
