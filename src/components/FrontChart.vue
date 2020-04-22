@@ -8,11 +8,10 @@ export default {
   data () {
     return {
       data: {
-        labels: ['HTML', 'CSS', 'Javascript', 'jQuery', 'SCSS', 'Vue'],
+        labels: [],
         datasets: [
           {
-
-            data: [50, 50, 40, 40, 0, 40],
+            data: [],
             backgroundColor: [
               'rgba(181,26,26,0.25)'
             ],
@@ -34,7 +33,7 @@ export default {
           ticks: {
             maxTicksLimit: 5,
             beginAtZero: true,
-            max:50,
+            max:5,
             min:0,
             atepSize: 10
           }
@@ -45,8 +44,28 @@ export default {
       }
     }
   },
+ // computed:{
+ //   score(){
+ //     return this.$store.getters.graphScore
+ //   },
+ //   getcategories(){
+ //     return this.$score.state.skillCategories;
+ //   }
+ // },
   mounted () {
-    this.renderChart(this.data, this.options)
+    this.getSkills();
+    this.renderChart(this.data, this.options);
+   // this.$store.dispatch('updateSkillCategories')
+  },
+  methods:{
+    getSkills(){
+      const frontSkillInfo = this.$store.getters.getSkills('front-end')
+      console.log(frontSkillInfo)
+      frontSkillInfo.skills.forEach((skill) => {
+        this.data.labels.push(skill.name),
+        this.data.datasets[0].data.push(skill.score)
+      })
+    }
   }
 }
 </script>
