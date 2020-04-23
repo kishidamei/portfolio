@@ -25,7 +25,8 @@ export default new Vuex.Store({
   actions: {
     async updateSkillCategories({commit}) {
       const skillCategories = [];
-      const res = await axios.get('https://us-central1-meikishida-a4ca3.cloudfunctions.net/skillCategories')
+      const functionsUrl = 'https://us-central1-' + process.env.VUE_APP_FUNCTIONS_API + '.cloudfunctions.net/skillCategories';
+      const res = await axios.get(functionsUrl);
       res.data.forEach((category) => {
         skillCategories.push(category);
       })
