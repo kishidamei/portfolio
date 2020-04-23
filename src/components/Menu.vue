@@ -69,12 +69,13 @@ export default {
   background-color: #f3f3f3;
   width: 100%;
   height: auto;
+  padding: 5px;
 }
 
 .drawerButton {
   color: #707070;
   position: relative;
-  top: 10px;
+  top: 0;
   left: 260px;
 }
 
@@ -97,7 +98,7 @@ export default {
 #drawerMenuItemLink {
   color: #707070;
   font-family: 'Noto Sans', sans-serif;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 </style>

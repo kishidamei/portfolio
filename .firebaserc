@@ -1,5 +1,21 @@
 {
   "projects": {
     "default": "meikishida-a4ca3"
+  },
+  "targets": {
+    "meikishida-a4ca3": {
+      "hosting": {
+        "portfolio": [
+          "meikishida-a4ca3"
+        ]
+      }
+    },
+    "develop-portfolio-27a77": {
+      "hosting": {
+        "portfolio": [
+          "develop-portfolio-27a77"
+        ]
+      }
+    }
   }
 }

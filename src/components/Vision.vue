@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style>
-#visionSection { background-color: #fff; }
+#visionSection { background-color: #f5f5f5; }
 
 #visionTitle {
   color: rgb(104, 196, 196);

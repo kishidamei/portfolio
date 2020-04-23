@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   res.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS, POST');
   // realtime databaseからスキルデータを取得する
   let skills = []
-  const query = admin.database().ref("skillCategories").orderByKey();
+  const query = admin.database().ref("skills").orderByKey();
   query.once("value").then(snapshot => {
     // 取得したデータを１件ずつ配列に設定する
     snapshot.forEach(childSnapshot => {
@@ -22,14 +22,10 @@ app.get('/', (req, res) => {
     });
     // 取得結果を返す
     return res.send(skills);
-  })
-    .catch(error => {
-      // 取得時にエラーがでた場合にエラー文字列を返す
-      res.status(404).send('No data available.');
-    });
+  });
 });
 // regionを指定してファンクションを定義(CORS対策)
-exports.skillCategories = functions.region('us-central1').https.onRequest(app);
+exports.skills = functions.region('us-central1').https.onRequest(app);
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //

@@ -70,13 +70,22 @@
         <li>AWS</li>
       </ul>
     </div>
-    <div v-if="isFrontActive">
+    <div
+      v-if="isFrontActive && loaded"
+      class="skillGraph"
+    >
       <FrontChart />
     </div>
-    <div v-if="isBackActive">
+    <div
+      v-if="isBackActive"
+      class="skillGraph"
+    >
       <BackChart />
     </div>
-    <div v-if="isDevOpsActive">
+    <div
+      v-if="isDevOpsActive"
+      class="skillGraph"
+    >
       <DevChart />
     </div>
   </body>
@@ -103,8 +112,11 @@ export default {
     isBackActive() {
       return this.currentChart=='back';},
     isDevOpsActive(){
-      return this.currentChart=='devOps';}
-      },
+      return this.currentChart=='devOps';},
+    loaded() {
+      return this.$store.state.loaded
+    }
+ },
 methods: {
   setCurrentChart(chart){
     this.currentChart = chart;
@@ -211,5 +223,7 @@ li {
   padding: 12px 20px 2px 20px;
   box-shadow: 0 0 8px gray;
 }
+
+.skillGraph { size: 10px; }
 
 </style>

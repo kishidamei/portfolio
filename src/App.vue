@@ -1,5 +1,7 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+  >
     <Header />
     <Main />
     <About />
@@ -16,8 +18,7 @@ import About from './components/About.vue'
 import Skill from './components/Skill.vue'
 import Vision from './components/Vision.vue'
 import Footer from './components/Footer.vue'
-
-
+//import {mapActions,mapGetters} from 'vuex'
 
 export default {
   name: 'App' ,
@@ -28,7 +29,16 @@ export default {
     Skill,
     Vision,
     Footer
-  }
+  },
+  data: function() {
+    return {
+      category: 'front-end',
+    };
+  },
+  mounted() {
+    this.$store.dispatch('updateSkillCategories')
+
+  },
 }
 </script>
 
