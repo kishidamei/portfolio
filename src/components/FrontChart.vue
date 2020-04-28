@@ -1,4 +1,5 @@
 
+
 <script>
 import { Radar } from 'vue-chartjs';
 
@@ -16,7 +17,7 @@ export default {
               'rgba(181,26,26,0.25)'
             ],
             borderColor: [
-              'rgba(87, 16, 131, 0.75)',
+              'rgba(181,26,26, 0.75)',
               'rgba(54,162,235,1)',
               'rgba(255,206,86,1)',
               'rgba(75,192,192,1)',

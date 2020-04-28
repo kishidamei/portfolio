@@ -33,7 +33,6 @@ export default {
   font-weight: bold;
   width: 100%;
   height: auto;
-  margin-top: 10px;
 }
 
 #main-name {
@@ -52,7 +51,7 @@ export default {
 
 #profil {
   border-radius: 50%;
-  width: 25%;
-  height: 25%;
+  width: 10%;
+  height: 10%;
 }
 </style>
