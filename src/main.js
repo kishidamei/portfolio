@@ -4,7 +4,8 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import smoothScroll from 'vue-smoothscroll'
 import App from './App.vue'
-Vue.use(VueAxios, axios,smoothScroll,Vue)
+Vue.use(VueAxios, axios,Vue)
+Vue.use(smoothScroll)
 Vue.config.productionTip = false
 
 new Vue({

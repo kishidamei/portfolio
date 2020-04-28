@@ -4,8 +4,8 @@
       Skill Set
     </h2>
     <h2 id="skillExplain">
-      修練のすえ身につけたスキルをまとめました。
-      苦手がなければ得意もない状態です。
+      修練のすえ身につけたスキルをまとめました。<br>
+      苦手がなければ得意もない状態です。<br>
       幅広くスキルアップしたいと考えています。
     </h2>
     <label id="GitHubLabel">
@@ -57,7 +57,6 @@
         <li>Ruby</li>
         <li>RubyOnRails</li>
         <li>MySQL</li>
-        <li>Python</li>
       </ul>
       <ul
         id="devops"
@@ -129,7 +128,6 @@ methods: {
 #skillSection {
   background-color: #fff;
   padding: 5px;
-  width: 100%;
   height: auto;
 }
 
@@ -147,7 +145,7 @@ methods: {
   color: rgb(138, 134, 134);
   font-size: 15px;
   word-break: keep-all;
-  line-height: 2.25em;
+  line-height: 1.25em;
 }
 
 #GitHubLabel {
@@ -224,6 +222,10 @@ li {
   box-shadow: 0 0 8px gray;
 }
 
-.skillGraph { size: 10px; }
+.skillGraph {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
 
 </style>

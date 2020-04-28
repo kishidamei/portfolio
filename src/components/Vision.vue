@@ -5,7 +5,9 @@
     </h2>
 
     <h2 id="visionExplain">
+      あらゆる分野に興味があり、<br>幅広く知識を身に付けて
       さまざまな開発に携わりたいと考えています。<br>
+      １年目の駆け出しエンジニアではありますが、
       コミュニケーションを大切に人を思いやる仕事をしていきたいです。
     </h2>
   </body>
@@ -37,7 +39,7 @@ export default {
   color: rgb(138, 134, 134);
   font-size: 15px;
   word-break: keep-all;
-  line-height: 2.25em;
+  line-height: 1.25em;
 }
 
 </style>
